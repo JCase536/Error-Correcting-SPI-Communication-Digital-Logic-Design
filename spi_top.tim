@@ -1,0 +1,450 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : spi_top
+Version: O-2018.06-SP3
+Date   : Tue Dec 14 12:10:38 2021
+****************************************
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[0]1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[3]/CK (DFFS_X1)                0.00       0.00 r
+  state_reg[3]/Q (DFFS_X1)                 0.06       0.06 f
+  U745/ZN (AND2_X1)                        0.04       0.10 f
+  U621/ZN (NAND2_X1)                       0.03       0.13 r
+  U620/ZN (OAI21_X1)                       0.03       0.17 f
+  U618/ZN (AOI211_X1)                      0.06       0.22 r
+  U617/ZN (INV_X1)                         0.04       0.26 f
+  U692/ZN (NAND2_X1)                       0.03       0.29 r
+  U693/ZN (AND3_X1)                        0.04       0.33 r
+  U384/ZN (OAI211_X1)                      0.04       0.37 f
+  U383/ZN (XNOR2_X1)                       0.05       0.41 f
+  U251/ZN (OAI22_X1)                       0.04       0.45 r
+  pb_latch_reg[0]1/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[0]1/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.03       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[2]1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[3]/CK (DFFS_X1)                0.00       0.00 r
+  state_reg[3]/Q (DFFS_X1)                 0.06       0.06 f
+  U745/ZN (AND2_X1)                        0.04       0.10 f
+  U621/ZN (NAND2_X1)                       0.03       0.13 r
+  U620/ZN (OAI21_X1)                       0.03       0.17 f
+  U618/ZN (AOI211_X1)                      0.06       0.22 r
+  U617/ZN (INV_X1)                         0.04       0.26 f
+  U699/ZN (NAND2_X1)                       0.03       0.29 r
+  U700/ZN (AND3_X1)                        0.04       0.33 r
+  U370/ZN (OAI211_X1)                      0.04       0.37 f
+  U369/ZN (XNOR2_X1)                       0.05       0.41 f
+  U248/ZN (OAI22_X1)                       0.04       0.45 r
+  pb_latch_reg[2]1/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[2]1/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.03       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[0]1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[3]/CK (DFFS_X1)                0.00       0.00 r
+  state_reg[3]/Q (DFFS_X1)                 0.06       0.06 f
+  U745/ZN (AND2_X1)                        0.04       0.10 f
+  U621/ZN (NAND2_X1)                       0.03       0.13 r
+  U620/ZN (OAI21_X1)                       0.03       0.17 f
+  U618/ZN (AOI211_X1)                      0.06       0.22 r
+  U617/ZN (INV_X1)                         0.04       0.26 f
+  U692/ZN (NAND2_X1)                       0.03       0.29 r
+  U693/ZN (AND3_X1)                        0.04       0.33 r
+  U384/ZN (OAI211_X1)                      0.04       0.37 f
+  U383/ZN (XNOR2_X1)                       0.05       0.41 f
+  U251/ZN (OAI22_X1)                       0.03       0.45 r
+  pb_latch_reg[0]1/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[0]1/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.03       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[2]1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[3]/CK (DFFS_X1)                0.00       0.00 r
+  state_reg[3]/Q (DFFS_X1)                 0.06       0.06 f
+  U745/ZN (AND2_X1)                        0.04       0.10 f
+  U621/ZN (NAND2_X1)                       0.03       0.13 r
+  U620/ZN (OAI21_X1)                       0.03       0.17 f
+  U618/ZN (AOI211_X1)                      0.06       0.22 r
+  U617/ZN (INV_X1)                         0.04       0.26 f
+  U699/ZN (NAND2_X1)                       0.03       0.29 r
+  U700/ZN (AND3_X1)                        0.04       0.33 r
+  U370/ZN (OAI211_X1)                      0.04       0.37 f
+  U369/ZN (XNOR2_X1)                       0.05       0.41 f
+  U248/ZN (OAI22_X1)                       0.03       0.45 r
+  pb_latch_reg[2]1/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[2]1/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.03       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[1]1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[4]2
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[1]1/CK (SDFFS_X1)              0.00       0.00 r
+  state_reg[1]1/Q (SDFFS_X1)               0.05       0.05 f
+  U591/ZN (NAND2_X1)                       0.03       0.08 r
+  U590/ZN (INV_X1)                         0.03       0.11 f
+  U574/ZN (NAND3_X1)                       0.04       0.15 r
+  U573/ZN (OAI22_X1)                       0.04       0.18 f
+  U572/ZN (INV_X1)                         0.03       0.21 r
+  U571/ZN (OAI221_X1)                      0.04       0.25 f
+  U570/ZN (INV_X1)                         0.03       0.28 r
+  U569/ZN (OAI221_X1)                      0.04       0.32 f
+  U546/ZN (INV_X1)                         0.03       0.35 r
+  U784/ZN (NAND2_X1)                       0.02       0.37 f
+  U536/ZN (XNOR2_X1)                       0.05       0.42 f
+  U308/ZN (OAI21_X1)                       0.03       0.45 r
+  pb_latch_reg[4]2/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[4]2/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.02       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[0]1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[4]2
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]1/CK (DFFS_X1)               0.00       0.00 r
+  state_reg[0]1/QN (DFFS_X1)               0.05       0.05 f
+  U591/ZN (NAND2_X1)                       0.03       0.08 r
+  U590/ZN (INV_X1)                         0.03       0.11 f
+  U574/ZN (NAND3_X1)                       0.04       0.15 r
+  U573/ZN (OAI22_X1)                       0.04       0.18 f
+  U572/ZN (INV_X1)                         0.03       0.21 r
+  U571/ZN (OAI221_X1)                      0.04       0.25 f
+  U570/ZN (INV_X1)                         0.03       0.28 r
+  U569/ZN (OAI221_X1)                      0.04       0.32 f
+  U546/ZN (INV_X1)                         0.03       0.35 r
+  U784/ZN (NAND2_X1)                       0.02       0.37 f
+  U536/ZN (XNOR2_X1)                       0.05       0.42 f
+  U308/ZN (OAI21_X1)                       0.03       0.45 r
+  pb_latch_reg[4]2/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[4]2/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.02       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[0]1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[2]/CK (DFFS_X1)                0.00       0.00 r
+  state_reg[2]/Q (DFFS_X1)                 0.06       0.06 f
+  U745/ZN (AND2_X1)                        0.04       0.10 f
+  U621/ZN (NAND2_X1)                       0.03       0.13 r
+  U620/ZN (OAI21_X1)                       0.03       0.17 f
+  U618/ZN (AOI211_X1)                      0.06       0.22 r
+  U617/ZN (INV_X1)                         0.04       0.26 f
+  U692/ZN (NAND2_X1)                       0.03       0.29 r
+  U693/ZN (AND3_X1)                        0.04       0.33 r
+  U384/ZN (OAI211_X1)                      0.04       0.36 f
+  U383/ZN (XNOR2_X1)                       0.05       0.41 f
+  U251/ZN (OAI22_X1)                       0.04       0.45 r
+  pb_latch_reg[0]1/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[0]1/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.03       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[2]1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[2]/CK (DFFS_X1)                0.00       0.00 r
+  state_reg[2]/Q (DFFS_X1)                 0.06       0.06 f
+  U745/ZN (AND2_X1)                        0.04       0.10 f
+  U621/ZN (NAND2_X1)                       0.03       0.13 r
+  U620/ZN (OAI21_X1)                       0.03       0.17 f
+  U618/ZN (AOI211_X1)                      0.06       0.22 r
+  U617/ZN (INV_X1)                         0.04       0.26 f
+  U699/ZN (NAND2_X1)                       0.03       0.29 r
+  U700/ZN (AND3_X1)                        0.04       0.33 r
+  U370/ZN (OAI211_X1)                      0.04       0.36 f
+  U369/ZN (XNOR2_X1)                       0.05       0.41 f
+  U248/ZN (OAI22_X1)                       0.04       0.45 r
+  pb_latch_reg[2]1/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[2]1/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.03       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[0]1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[3]/CK (DFFS_X1)                0.00       0.00 r
+  state_reg[3]/Q (DFFS_X1)                 0.06       0.06 f
+  U745/ZN (AND2_X1)                        0.04       0.10 f
+  U621/ZN (NAND2_X1)                       0.03       0.13 r
+  U620/ZN (OAI21_X1)                       0.03       0.17 f
+  U618/ZN (AOI211_X1)                      0.06       0.22 r
+  U617/ZN (INV_X1)                         0.04       0.26 f
+  U692/ZN (NAND2_X1)                       0.03       0.29 r
+  U693/ZN (AND3_X1)                        0.04       0.33 r
+  U384/ZN (OAI211_X1)                      0.04       0.37 f
+  U383/ZN (XNOR2_X1)                       0.05       0.41 f
+  U251/ZN (OAI22_X1)                       0.03       0.45 r
+  pb_latch_reg[0]1/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[0]1/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.03       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pb_latch_reg[2]1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  spi_top            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[3]/CK (DFFS_X1)                0.00       0.00 r
+  state_reg[3]/Q (DFFS_X1)                 0.06       0.06 f
+  U745/ZN (AND2_X1)                        0.04       0.10 f
+  U621/ZN (NAND2_X1)                       0.03       0.13 r
+  U620/ZN (OAI21_X1)                       0.03       0.17 f
+  U618/ZN (AOI211_X1)                      0.06       0.22 r
+  U617/ZN (INV_X1)                         0.04       0.26 f
+  U699/ZN (NAND2_X1)                       0.03       0.29 r
+  U700/ZN (AND3_X1)                        0.04       0.33 r
+  U370/ZN (OAI211_X1)                      0.04       0.37 f
+  U369/ZN (XNOR2_X1)                       0.05       0.41 f
+  U248/ZN (OAI22_X1)                       0.03       0.45 r
+  pb_latch_reg[2]1/D (DFF_X1)              0.01       0.46 r
+  data arrival time                                   0.46
+
+  clock clk' (rise edge)                   0.54       0.54
+  clock network delay (ideal)              0.00       0.54
+  clock uncertainty                       -0.05       0.49
+  pb_latch_reg[2]1/CK (DFF_X1)             0.00       0.49 r
+  library setup time                      -0.03       0.46
+  data required time                                  0.46
+  -----------------------------------------------------------
+  data required time                                  0.46
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

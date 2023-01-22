@@ -1,0 +1,57 @@
+Loading db file '/synopsys/Nangate_FreePDK45/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : spi_top
+Version: O-2018.06-SP3
+Date   : Tue Dec 14 12:10:38 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /synopsys/Nangate_FreePDK45/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary.db)
+
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+spi_top                5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.25 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   2.2543 mW   (79%)
+  Net Switching Power  = 590.3713 uW   (21%)
+                         ---------
+Total Dynamic Power    =   2.8447 mW  (100%)
+
+Cell Leakage Power     = 149.1697 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      1.7670          179.8947           53.0067          181.7147  (   6.07%)
+register       2.0679e+03          130.1655        8.8813e+04        2.2869e+03  (  76.39%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    184.6209          280.3112        6.0303e+04          525.2352  (  17.54%)
+--------------------------------------------------------------------------------------------------
+Total          2.2543e+03 uW       590.3713 uW     1.4917e+05 nW     2.9939e+03 uW
+1

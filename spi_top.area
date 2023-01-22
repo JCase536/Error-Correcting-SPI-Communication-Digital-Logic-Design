@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : spi_top
+Version: O-2018.06-SP3
+Date   : Tue Dec 14 12:10:35 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /synopsys/Nangate_FreePDK45/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary.db)
+
+Number of ports:                           72
+Number of nets:                          1164
+Number of cells:                          963
+Number of combinational cells:            646
+Number of sequential cells:               315
+Number of macros/black boxes:               0
+Number of buf/inv:                        104
+Number of references:                      35
+
+Combinational area:                728.308006
+Buf/Inv area:                       59.850000
+Noncombinational area:            1497.047961
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  2225.355968
+Total area:                 undefined
+1

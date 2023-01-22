@@ -1,0 +1,36 @@
+
+`timescale 1ns/100ps
+module spi_top_tb;
+
+	wire [10:0] data_to_proc, data_to_peri0, data_to_peri1;
+	reg [10:0] data_from_proc, data_from_peri0, data_from_peri1;
+	reg clk = 0, reset = 0;
+	reg [15:0] dis = 0;
+	
+	wire err_m, err_s0, err_s1;
+
+	spi_top uut (data_to_proc, data_to_peri0, data_to_peri1, err_m, err_s0, err_s1,
+				data_from_proc, data_from_peri0, data_from_peri1, dis[0], reset, clk);
+	
+	always clk = #5 ~clk;
+	
+	initial begin
+		reset = 1;
+		#40;
+		reset = 0;
+	end
+
+	integer i;
+	always @(posedge clk) begin
+		dis = dis >> 1;
+	end
+	
+	always begin
+		data_from_proc = $random;
+		data_from_peri0 = $random;
+		data_from_peri1 = $random;
+		i = $urandom % 16;
+		dis[i] = 1'b0;
+		#160;
+	end
+endmodule
